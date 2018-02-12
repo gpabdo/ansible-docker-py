@@ -1,0 +1,8 @@
+---
+# tasks file for docker-py
+
+- name: Install python-pip
+  apt: name=python-pip state=present
+
+- name: Install docker-py
+  pip: name=docker-py
